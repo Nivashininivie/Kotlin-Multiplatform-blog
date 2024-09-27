@@ -2,9 +2,9 @@
 <img src="https://github.com/Nivashininivie/Kotlin-Multiplatform-blog/blob/main/kmp_final.png" alt="Description" width="650" />
 </p>
 
-# Kotlin Multiplatform for Hybrid App Development? 
+# Kotlin Multiplatform for Hybrid Apps Development? 
 
-Nearly all the online service providers now offer mobile applications, thereby increasing the demand for efficient Mobile App development. Depending on the requirements, developers can choose between Native or Hybrid App development.
+Nearly all the online service providers now offer mobile applications, thereby increasing the demand for efficient Mobile Apps development. Depending on the requirements, developers can choose between Native or Hybrid.
 
 While Native Mobile Applications provide platform-specific advantages, it often comes with challenges such as inconsistent behavior across platforms, higher development costs, and time constraints. 
 
@@ -13,7 +13,7 @@ To address this, nowadays companies prefer hybrid app development. In Google I/O
 ## How KMP is different from other frameworks available? 
 Eventhough there are lots of cross-platform tools available, KMP lets us to maintain the same code for different platforms while retaining the flexibility and benefits of native programming, allowing developers to choose the approach that best fits their specific needs.
 
-Factors where we can consider KMP over other tools are:
+#### Major Usecases:
 
 
 <table>
@@ -39,7 +39,7 @@ Factors where we can consider KMP over other tools are:
 - Case 2 is suitable for maintaining a native look and feel while ensuring consistent functionality across all platforms. By using platform-specific code for the UI, optimal performance is achieved, resulting in a smooth user experience. However, keep in mind that this will also double the associated costs and time.
 - Case 3 is ideal when you want to have control over the UI as well. Maintaining separate UI code for each platform can double the time spent on development and fixes. The UI can be implemented using [Compose Multiplatform](http://https://www.jetbrains.com/compose-multiplatform/ "Compose Multiplatform")
 
-## Essential Takeaways for Kotlin Multiplatform
+## KMP's Essential Takeaways
 
 ### Prerequisites 
 
@@ -102,7 +102,7 @@ Check out their [official site](http://https://www.jetbrains.com/help/kotlin-mul
 - Beta Features: Some KMP features, particularly for iOS and web, may still be in beta or alpha stages, which can lead to stability issues.
 - Lesser community & documentation: The community and available documentation are still developing compared to more established frameworks, which may pose challenges for developers seeking support.
 
-To summarise, Kotlin Multiplatform is an exciting and evolving technology, where developers should be prepared to navigate the above challenges. Despite a smaller community, its potential for cross-platform development remains promising as the ecosystem matures.
+While the three use cases provide significant flexibility in selecting KMP, it is still an evolving technology. Developers should be ready to navigate the associated challenges. Despite having a smaller community, KMP shows great promise for cross-platform development as the ecosystem continues to mature.
 
 
 

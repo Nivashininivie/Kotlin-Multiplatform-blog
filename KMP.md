@@ -1,6 +1,8 @@
+<p align="center">
+<img src="https://github.com/Nivashininivie/Kotlin-Multiplatform-blog/blob/main/kmp_final.png" alt="Description" width="650" />
+</p>
 
-
-### Kotlin Multiplatform for Hybrid App Development? 
+# Kotlin Multiplatform for Hybrid App Development? 
 
 Nearly all the online service providers now offer mobile applications, thereby increasing the demand for efficient Mobile App development. Depending on the requirements, developers can choose between Native or Hybrid App development.
 
@@ -14,50 +16,54 @@ Eventhough there are lots of cross-platform tools available, KMP lets us to main
 Factors where we can consider KMP over other tools are:
 
 
-<div style="display: flex; justify-content: space-between;">
+<table>
+  <tr>
+    <td style="border: 2px solid #ddd; border-radius: 10px; padding: 20px; margin: 10px; background-color: #f0f8ff; width: 30%; text-align: center;">
+      <h2> 1</h2>
+      <p> Shared Complex Modules with Native UI </p>
+    </td>
+    <td style="border: 2px solid #ddd; border-radius: 10px; padding: 20px; margin: 10px; background-color: #e6ffe6; width: 30%; text-align: center;">
+      <h2> 2 </h2>
+      <p> Complete KMP Module with Native UI </p>
+    </td>
+    <td style="border: 2px solid #ddd; border-radius: 10px; padding: 20px; margin: 10px; background-color: #fff0f5; width: 30%; text-align: center;">
+      <h2> 3 </h2>
+      <p> 100% KMP Module with CMP UI [Entire Logic & UI] </p>
+    </td>
+  </tr>
+</table>
 
-  <div style="border:1px solid #ccc; border-radius:10px; padding:15px; margin:10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); width: 30%;">
-  <h3>1</h3>
-    <p>Shared Complex Modules with Native UI</p>
-  </div>
 
-  <div style="border:1px solid #ccc; border-radius:10px; padding:15px; margin:10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); width: 30%;">
-    <h3>2</h3>
-    <p>Complete KMP Module with Native UI</p>
-  </div>
 
-  <div style="border:1px solid #ccc; border-radius:10px; padding:15px; margin:10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); width: 30%;">
-    <h3>3</h3>
-    <p>100% KMP Module with CMP UI [Entire Logic & UI]</p>
-  </div>
-
-</div>
-
-1. Usecase 1 is ideal when you already have separate platform-based applications but to avoid inconsistencies between platforms, critical functionalities can be developed as a Kotlin module and utilized across the entire codebase
-
-2. Usecase 2 is suitable for maintaining a native look and feel while ensuring consistent functionality across all platforms. By using platform-specific code for the UI, optimal performance is achieved, resulting in a smooth user experience. However, keep in mind that this will also double the associated costs and time.
-
-3. Use case 3 is ideal when you want to have control over the UI as well. Maintaining separate UI code for each platform can double the time spent on development and fixes. The UI can be implemented using [Compose Multiplatform](http://https://www.jetbrains.com/compose-multiplatform/ "Compose Multiplatform")
+- Case 1 is ideal when you already have separate platform-based applications but to avoid inconsistencies between platforms, critical functionalities can be developed as a Kotlin module and utilized across the entire codebase
+- Case 2 is suitable for maintaining a native look and feel while ensuring consistent functionality across all platforms. By using platform-specific code for the UI, optimal performance is achieved, resulting in a smooth user experience. However, keep in mind that this will also double the associated costs and time.
+- Case 3 is ideal when you want to have control over the UI as well. Maintaining separate UI code for each platform can double the time spent on development and fixes. The UI can be implemented using [Compose Multiplatform](http://https://www.jetbrains.com/compose-multiplatform/ "Compose Multiplatform")
 
 ## Essential Takeaways for Kotlin Multiplatform
 
 ### Prerequisites 
+
 Before diving into the details,  it's essential to have a clear understanding of the following prerequisites:
 
-1. Kotlin: Whether developing shared logic or the entire app functionality, having knowledge of Kotlin is essential.
+1. **Kotlin:** Whether developing shared logic or the entire app functionality, having knowledge of Kotlin is essential.
 
-2. Platform-Specific Knowledge: If you choose to work with native UI, it’s crucial to be familiar with Jetpack Compose for Android and Swift for iOS.
+2. **Platform-Specific Knowledge:** If you choose to work with native UI, it’s crucial to be familiar with Jetpack Compose for Android and Swift for iOS.
 
-3. Compose Multiplatform: If the project involves handling the UI with Kotlin Multiplatform, understanding Compose Multiplatform is important.
+3. **Compose Multiplatform:** If the project involves handling the UI with Kotlin Multiplatform, understanding Compose Multiplatform is important.
 
 ### Compose Multiplatform
 Compose Multiplatform (CMP) is a declarative framework built on Kotlin Multiplatform and Jetpack Compose, enabling developers to create user interfaces for multiple platforms, including iOS, macOS, Windows, Linux, and web applications.
 
-**Key Features**  
-*State-Driven:* The framework automatically re-renders the necessary parts of the UI when the state changes.   
-*Simplified Code:* With its declarative syntax, CMP reduces boilerplate code, making it more concise and easier to read.  
+<p align="center">
+<img src="https://github.com/Nivashininivie/Kotlin-Multiplatform-blog/blob/main/cmp.png" alt="cmp" width="650" />
+</p>
 
+#### Key Features
+
+**State-Driven:** The framework automatically re-renders the necessary parts of the UI when the state changes.   
+**Simplified Code:** With its declarative syntax, CMP reduces boilerplate code, making it more concise and easier to read.  
 **How CMP Renders UI?**
+
 - Android: Jetpack Compose with the native Android toolkit.
 - iOS: UIKit 
 - Desktop (Windows, macOS, Linux): Uses Skia via Skiko 
@@ -65,7 +71,8 @@ Compose Multiplatform (CMP) is a declarative framework built on Kotlin Multiplat
 
 Since CMP leverages native rendering systems, the UI components not only look but also behave like native applications, which is a significant advantage.
 
-**Stability constraints**   
+#### Stability constraints
+
 As of September 2024, the stability of CMP varies by platform:  
 | Platform                                   | Stability Stage |
 |--------------------------------------------|-----------------|
@@ -76,6 +83,9 @@ As of September 2024, the stability of CMP varies by platform:
 ### KMP Wizard
 Unlike other tools, KMP offers a separate wizard for creating KMP app where you are presented with an user interface which lets you to create your own customised hybrid application
 This wizard also simplifies the app creation process with standard templates which helps you to create apps based on your needs in just a few secs 
+<p align="center">
+<img src="https://github.com/Nivashininivie/Kotlin-Multiplatform-blog/blob/main/KMP_wizard.png" alt="kmpw" width="650" />
+</p>
 For more details, refer to this link [KMP wizard](http://https://kmp.jetbrains.com/ "KMP wizard")
 
 ### Interesting Case Studies

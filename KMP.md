@@ -10,7 +10,7 @@ While Native Mobile Applications provide platform-specific advantages, it often 
 
 To address this, nowadays companies prefer hybrid app development. In Google I/O 2019, google announced the emerging of new technology Kotlin Multiplatform. From there till now, there was a significant improvement & enhancements added. Let's checkout how KMP stands from other cross platform tools in the following.
 
-### How KMP is different from other frameworks available? 
+## How KMP is different from other frameworks available? 
 Eventhough there are lots of cross-platform tools available, KMP lets us to maintain the same code for different platforms while retaining the flexibility and benefits of native programming, allowing developers to choose the approach that best fits their specific needs.
 
 Factors where we can consider KMP over other tools are:
@@ -60,16 +60,15 @@ Compose Multiplatform (CMP) is a declarative framework built on Kotlin Multiplat
 
 #### Key Features
 
-**State-Driven:** The framework automatically re-renders the necessary parts of the UI when the state changes.   
-**Simplified Code:** With its declarative syntax, CMP reduces boilerplate code, making it more concise and easier to read.  
-**How CMP Renders UI?**
+* State-Driven: The framework automatically re-renders the necessary parts of the UI when the state changes.   
+* Simplified Code: With its declarative syntax, CMP reduces boilerplate code, making it more concise and easier to read.  
 
+**How CMP Renders UI?**
 - Android: Jetpack Compose with the native Android toolkit.
 - iOS: UIKit 
 - Desktop (Windows, macOS, Linux): Uses Skia via Skiko 
 - Web: Uses HTML Canvas or the DOM via WebAssembly or JavaScript.   
-
-Since CMP leverages native rendering systems, the UI components not only look but also behave like native applications, which is a significant advantage.
+Since CMP leverages native rendering systems, the UI components not only look but also behave like native applications, which is a significant advantage.    
 
 #### Stability constraints
 
@@ -84,7 +83,7 @@ As of September 2024, the stability of CMP varies by platform:
 Unlike other tools, KMP offers a separate wizard for creating KMP app where you are presented with an user interface which lets you to create your own customised hybrid application
 This wizard also simplifies the app creation process with standard templates which helps you to create apps based on your needs in just a few secs 
 <p align="center">
-<img src="https://github.com/Nivashininivie/Kotlin-Multiplatform-blog/blob/main/KMP_wizard.png" alt="kmpw" width="650" />
+<img src="https://github.com/Nivashininivie/Kotlin-Multiplatform-blog/blob/main/kmp_wiz.png" alt="kmpw" width="650" />
 </p>
 For more details, refer to this link [KMP wizard](http://https://kmp.jetbrains.com/ "KMP wizard")
 
@@ -102,6 +101,8 @@ Check out their [official site](http://https://www.jetbrains.com/help/kotlin-mul
 - Library support: While KMP is growing, still some libraries are not fully optimized for multiplatform use
 - Beta Features: Some KMP features, particularly for iOS and web, may still be in beta or alpha stages, which can lead to stability issues.
 - Lesser community & documentation: The community and available documentation are still developing compared to more established frameworks, which may pose challenges for developers seeking support.
+
+To summarise, Kotlin Multiplatform is an exciting and evolving technology, where developers should be prepared to navigate the above challenges. Despite a smaller community, its potential for cross-platform development remains promising as the ecosystem matures.
 
 
 

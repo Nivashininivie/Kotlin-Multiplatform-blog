@@ -2,48 +2,29 @@
 <img src="https://github.com/Nivashininivie/Kotlin-Multiplatform-blog/blob/main/kmp_final.png" alt="Description" width="650" />
 </p>
 
-# Kotlin Multiplatform for Hybrid Apps Development? 
+# Kotlin Multiplatform Unveiled: How It Stacks Up Against Hybrid App Frameworks 
 
-Nearly all the online service providers now offer mobile applications, thereby increasing the demand for efficient Mobile Apps development. Depending on the requirements, developers can choose between Native or Hybrid.
+Nearly all the online service providers now offers mobile applications, increasing the demand for efficient Mobile Apps development. Depending on the requirements, developers can choose between Native or Hybrid.
 
-While Native Mobile Applications provide platform-specific advantages, it often comes with challenges such as inconsistent behavior across platforms, higher development costs, and time constraints. 
+While native mobile applications offer platform-specific advantages, they often come with challenges such as inconsistent behavior across platforms, higher development costs, and time constraints. To address these issues, many hybrid app development frameworks have been introduced, leading to an ongoing debate about choosing the right cross-platform tool. Kotlin Multiplatform is one such tool, announced by Google at Google I/O 2019. Since then, it has seen significant improvements and enhancements. 
 
-To address this, nowadays companies prefer hybrid app development. In Google I/O 2019, google announced the emerging of new technology Kotlin Multiplatform. From there till now, there was a significant improvement & enhancements added. Let's checkout how KMP stands from other cross platform tools in the following.
+Additionally, at the latest Google I/O 2024, Kotlin Multiplatform was recommended for sharing business logic across mobile, web, server, and desktop platforms. Google's next move involves integrating KMP into Google Workspace, indicating that we can expect significant progress on this platform.
 
 ## How KMP is different from other frameworks available? 
-Eventhough there are lots of cross-platform tools available, KMP lets us to maintain the same code for different platforms while retaining the flexibility and benefits of native programming, allowing developers to choose the approach that best fits their specific needs.
+Eventhough there are many cross-platform tools available, KMP enables to maintain the same code for different platforms while retaining the flexibility and benefits of native programming, allowing developers to choose the approach that best fits their specific needs. Following are the usecases provided by KMP:
 
-#### Major Usecases:
+- **Shared Complex Modules with Native UI -** This approach is ideal when you already have separate platform-based applications but to avoid inconsistencies between platforms, critical functionalities can be developed as a Kotlin module and utilized across the entire codebase
+- **Complete KMP Module with Native UI -** This is suitable for maintaining a native look and feel while ensuring consistent functionality across all platforms. By using platform-specific code for the UI, optimal performance is achieved, resulting in a smooth user experience. However, keep in mind that this will also double the associated costs and time.
+- **100% KMP Module with CMP UI [Entire Logic & UI] -** When you want to have control over the UI as well. Maintaining separate UI code for each platform can double the time spent on development and fixes. The UI can be implemented using [Compose Multiplatform](https://www.jetbrains.com/compose-multiplatform/ "Compose Multiplatform")
 
+- **Flexibility in Architecture -** While Flutter and React Native are powerful frameworks for cross-platform mobile development, they do impose certain constraints regarding UI design and architecture that KMP does not, making it a compelling choice for developers seeking flexibility and efficiency across multiple platforms.
+- **Server-Side Development -** KMP also offers a robust environment for server-side development utilizing the Ktor framework, while in other frameworks, you would typically need to use additional technologies.
 
-<table>
-  <tr>
-    <td style="border: 2px solid #ddd; border-radius: 10px; padding: 20px; margin: 10px; background-color: #f0f8ff; width: 30%; text-align: center;">
-      <h2> 1</h2>
-      <p> Shared Complex Modules with Native UI </p>
-    </td>
-    <td style="border: 2px solid #ddd; border-radius: 10px; padding: 20px; margin: 10px; background-color: #e6ffe6; width: 30%; text-align: center;">
-      <h2> 2 </h2>
-      <p> Complete KMP Module with Native UI </p>
-    </td>
-    <td style="border: 2px solid #ddd; border-radius: 10px; padding: 20px; margin: 10px; background-color: #fff0f5; width: 30%; text-align: center;">
-      <h2> 3 </h2>
-      <p> 100% KMP Module with CMP UI [Entire Logic & UI] </p>
-    </td>
-  </tr>
-</table>
-
-
-
-- Case 1 is ideal when you already have separate platform-based applications but to avoid inconsistencies between platforms, critical functionalities can be developed as a Kotlin module and utilized across the entire codebase
-- Case 2 is suitable for maintaining a native look and feel while ensuring consistent functionality across all platforms. By using platform-specific code for the UI, optimal performance is achieved, resulting in a smooth user experience. However, keep in mind that this will also double the associated costs and time.
-- Case 3 is ideal when you want to have control over the UI as well. Maintaining separate UI code for each platform can double the time spent on development and fixes. The UI can be implemented using [Compose Multiplatform](http://https://www.jetbrains.com/compose-multiplatform/ "Compose Multiplatform")
-
-## KMP's Essential Takeaways
+## Essential Takeaways
 
 ### Prerequisites 
 
-Before diving into the details,  it's essential to have a clear understanding of the following prerequisites:
+Before diving into the details,  it's essential to have a piece of knowledge on the below:
 
 1. **Kotlin:** Whether developing shared logic or the entire app functionality, having knowledge of Kotlin is essential.
 
@@ -85,7 +66,7 @@ This wizard also simplifies the app creation process with standard templates whi
 <p align="center">
 <img src="https://github.com/Nivashininivie/Kotlin-Multiplatform-blog/blob/main/kmp_wiz.png" alt="kmpw" width="650" />
 </p>
-For more details, refer to this link [KMP wizard](http://https://kmp.jetbrains.com/ "KMP wizard")
+For more details, refer to this link [KMP wizard](https://kmp.jetbrains.com/ "KMP wizard")
 
 ### Interesting Case Studies
 Here are some major apps that use KMP under the hood:
@@ -94,7 +75,7 @@ Here are some major apps that use KMP under the hood:
 3. Philips
 4. McDonald's and more...
 
-Check out their [official site](http://https://www.jetbrains.com/help/kotlin-multiplatform-dev/case-studies.html "official site") for more details on the case studies
+Check out their [official site](https://www.jetbrains.com/help/kotlin-multiplatform-dev/case-studies.html "official site") for more details on the case studies
 
 ### Is it Still Evolving???
 - Steeper Learning Curve: If you are new to KMP, you should have a basic understanding of Kotlin, Compose UI, Swift [If Native UI is preferred], etc
@@ -102,7 +83,10 @@ Check out their [official site](http://https://www.jetbrains.com/help/kotlin-mul
 - Beta Features: Some KMP features, particularly for iOS and web, may still be in beta or alpha stages, which can lead to stability issues.
 - Lesser community & documentation: The community and available documentation are still developing compared to more established frameworks, which may pose challenges for developers seeking support.
 
-While the three use cases provide significant flexibility in selecting KMP, it is still an evolving technology. Developers should be ready to navigate the associated challenges. Despite having a smaller community, KMP shows great promise for cross-platform development as the ecosystem continues to mature.
-
-
+Taking everything into account, KMP will be a great choice, 
+- If you want to provide stable functionality while still offering a native user experience, you can utilize complete KMP modules and retain the UI natively.
+- If you want to integrate with existing projects while enabling teams to adopt shared code without completely overhauling their current codebases
+- Or if you prefer to share only a portion of the logic while retaining the rest of the functionalities as is on their respective platforms.
+  
+  
 
